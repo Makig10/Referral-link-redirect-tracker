@@ -4,6 +4,7 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.1",
+    "http": "^0.0.1-security",
     "mongodb": "^6.19.0"
   }
 }

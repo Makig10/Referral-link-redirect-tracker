@@ -1,12 +1,15 @@
 import { MongoClient } from "mongodb";
+import 'dotenv/config';
+
 
 let cachedClient = null;
 
 export default async function handler(req, res) {
   try {
     const uri = process.env.MONGODB_URI;
+  
     if (!uri) throw new Error("MONGODB_URI is not defined!");
-
+    
     // Reuse cached client if available
     if (!cachedClient) {
       const client = new MongoClient(uri);
