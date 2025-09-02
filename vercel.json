@@ -1,10 +1,12 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "api/go.js", "use": "@vercel/node" }
-    ],
+    "version": 3,
+    "functions": {
+      "api/*.js": {
+        "runtime": "nodejs18.x"
+      }
+    },
     "routes": [
-      { "src": "/go", "dest": "api/go.js" }
+      { "src": "/api/(.*)", "dest": "/api/$1.js" }
     ]
   }
   
