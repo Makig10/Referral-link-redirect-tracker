@@ -3,6 +3,10 @@ Referral link that tracks traffic to soulhostels through this link
 go.js : Optimized Serverless Version 
 
 
+https://your-vercel-url.vercel.app/go → logs click and redirects
+
+https://your-vercel-url.vercel.app/go/test → shows total clicks
+
 
 
 
@@ -21,6 +25,9 @@ Limitations:
 ⚠️ Still depends on serverless instance caching — if Vercel spins up new instances, a new connection is made.
 
 ⚠️ For extremely high-traffic apps, you may need connection pooling or a managed serverless MongoDB setup like Atlas.
+
+
+
 
 💡 Summary:
 
