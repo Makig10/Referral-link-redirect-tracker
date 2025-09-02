@@ -1,0 +1,9 @@
+{
+  "name": "click-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "mongodb": "^6.19.0"
+  }
+}
